@@ -20,12 +20,13 @@ This Reference covers **the basics** of the CBI system.
 创建一个新的部分
 
 * **sectionclass**: 类对象的部分
-* _additional parameters passed to the constructor of the section class_
+* _以结构体的形式把额外参数传递给section类_
 
 ----
 
-## class NamedSection (_name, type, title, description_)
-An object describing an UCI section selected by the name.<br />
+## 类 NamedSection (_name, type, title, description_)
+实例化对象名称在sectioin类中
+<br />
 To instantiate use: `Map:section(NamedSection, "name", "type", "title", "description")`
 
 * **name:** UCI section name
@@ -33,10 +34,11 @@ To instantiate use: `Map:section(NamedSection, "name", "type", "title", "descrip
 * **title:** The title shown in the UI
 * **description:** description shown in the UI
 
-#### function :option(_optionclass_, ...)
-Creates a new option
-* **optionclass:** a class object of the section
-* _additional parameters passed to the constructor of the option class_
+#### 函数 :option(_optionclass_, ...)
+创建一个新的选项
+
+* **optionclass:** 一个类对象的部分
+* _以结构体的形式把额外参数传递给section类_
 
 #### property .addremove = false
 Allows the user to remove and recreate the configuration section.
